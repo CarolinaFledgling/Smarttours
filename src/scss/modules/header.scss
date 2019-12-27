@@ -1,0 +1,118 @@
+.header {
+    color: $light-white;
+    position: relative;
+    height: 95vh;
+    background-image: linear-gradient(to right bottom, rgba(217, 129, 129, 0.507), rgba(209, 102, 102, 0.555)), url("../assets/img/nat-6.jpg");
+    background-size: cover;
+    background-position: bottom;
+    text-transform: uppercase;
+
+    clip-path: polygon(0 0, 100% 0, 87% 100%, 0 100%);
+
+
+    &__logo {
+        position: absolute;
+        top: 40px;
+        left: 40px;
+        height: 100px;
+    }
+
+    &__title {
+        backface-visibility: hidden;
+        font-size: 3.75rem;
+        letter-spacing: 2rem;
+        font-weight: 700;
+        animation: moveInLeft 1s ease-out;
+
+    }
+
+    &__description {
+        backface-visibility: hidden;
+        font-size: 1.25rem;
+        letter-spacing: 0.6rem;
+        font-weight: 400;
+        animation: moveInRight 1s ease-out;
+    }
+
+    &__text-box {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &__button {
+        border:none;
+        background: $light-white;
+        color: $black;
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 20px 60px;
+        font-weight: 700;
+        text-transform: uppercase;
+        border-radius: 100px;
+        letter-spacing: 2px;
+        -webkit-box-shadow: 10px 2px 8px 0px rgba(0, 0, 0, 0.16);
+        -moz-box-shadow: 10px 2px 8px 0px rgba(0, 0, 0, 0.16);
+        box-shadow: 10px 2px 8px 0px rgba(0, 0, 0, 0.16);
+        cursor: pointer;
+        transition: all 0.3s ease 0s
+    }
+
+    &__button-link {
+        display: inline-block;
+        
+    }
+
+    &__button:hover {
+        color:$black;
+        letter-spacing: 3px;
+        font-weight: 700;
+        background: $light-white;
+        -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+        -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+        transition: all 0.3s ease 0s;
+
+    }
+
+}
+
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    50% {
+        transform: translateX(10px);
+
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    50% {
+        transform: translateX(-10px);
+
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+
+}
