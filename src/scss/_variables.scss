@@ -7,6 +7,7 @@ $light-gray:#F5F7FA;
 $light-red:#D98181;
 $light-white:#FFFFFF;
 $black:#404040;
+$light-dark:#3F5360;
 
 
 
@@ -24,10 +25,16 @@ $gutter-horizontal:6rem;
 // mixinScss
 
 @mixin clearfix {
-    &::after{
+    &::after {
         content: "";
         display: table;
-        clear:both;
+        clear: both;
     }
-    
+
+}
+
+// center text 
+
+.center-text {
+    text-align: center;
 }
