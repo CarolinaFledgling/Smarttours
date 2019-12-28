@@ -1,3 +1,4 @@
+// Colors
 $dark: #2C4251;
 $white: #FEFDFD;
 $tomato:#D16666;
@@ -6,3 +7,27 @@ $light-gray:#F5F7FA;
 $light-red:#D98181;
 $light-white:#FFFFFF;
 $black:#404040;
+
+
+
+//Grid
+
+$grid-width:114rem;
+$gutter-vertical:8rem;
+$gutter-horizontal:6rem;
+
+
+
+
+
+
+// mixinScss
+
+@mixin clearfix {
+    &::after{
+        content: "";
+        display: table;
+        clear:both;
+    }
+    
+}
