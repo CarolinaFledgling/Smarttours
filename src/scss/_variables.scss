@@ -11,11 +11,7 @@ $light-dark:#3F5360;
 
 
 
-//Grid
 
-$grid-width:1140px;
-$gutter-vertical:15rem;
-$gutter-horizontal:6rem;
 
 
 
@@ -36,5 +32,6 @@ $gutter-horizontal:6rem;
 // center text 
 
 .center-text {
+    margin-top: 5rem; 
     text-align: center;
 }
