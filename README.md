@@ -2,5 +2,4 @@
 
 
 
-[Smarttours](https://carolinafledgling.github.io/Smarttours/.)
 
