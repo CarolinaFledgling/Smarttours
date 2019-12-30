@@ -20,18 +20,18 @@ $light-dark:#3F5360;
 
 // mixinScss
 
-@mixin clearfix {
-    &::after {
-        content: "";
-        display: table;
-        clear: both;
-    }
+// @mixin clearfix {
+//     &::after {
+//         content: "";
+//         display: table;
+//         clear: both;
+//     }
 
-}
+// }
 
 // center text 
 
 .center-text {
-    margin-top: 5rem; 
+    margin-top: 1rem; 
     text-align: center;
 }
