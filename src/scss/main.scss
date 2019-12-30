@@ -31,68 +31,18 @@ body {
 //Grid
 
 $grid-width:71.25rem;
-// $gutter-vertical:1rem;
-// $gutter-horizontal:3.75rem;
 
 
-
-
-
-.about__row {
-    width: 80vw;
-    height: 70vh;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-items: center;
-    align-items: center;
-
-    column-gap: 1.5rem;
-    // row-gap: 1.5rem;
-}
 
 .feature__row {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-content: center;
     align-items: center;
-    
-    //  column-gap: 1.5rem;
-    // row-gap: 1.5rem;
-    
 }
 
 
-// .row {
 
-//     display: grid;
-//     grid-template-columns: 1fr 1fr 1fr 1fr ;
-//     column-gap: 1.5rem;
-//     row-gap: 1.5rem;
-//   max-width: $grid-width;
-//   margin: 0 auto;
-//   margin-bottom: $gutter-vertical;
-
-//   &:not(:last-child) {
-//       margin-bottom: $gutter-vertical;
-
-//   }
-
-// &:last-child{
-//     margin-bottom: 0;
-// }
-
-
-
-//   @include clearfix;
-
-//   [class^="col-"] {
-//       float: left;
-
-//       &:not(:last-child) {
-//           margin-right: $gutter-horizontal;
-//       }
-//   }
 
 //   .col-1-of-2 {
 //       width: calc((100% - #{$gutter-horizontal}) / 2);
