@@ -1,14 +1,13 @@
 .header {
-    color:$light-white;
+    color: $light-white;
     position: relative;
     height: 95vh;
-    background-image:url("../assets/img/nat-n6 1.jpg");
-    
+    background-image: url("../assets/img/nat-n6 1.jpg");
     background-size: cover;
     background-position: bottom;
     text-transform: uppercase;
 
-    clip-path: polygon(0 0, 100% 0,100% 75vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 
 
     &__logo {
@@ -19,13 +18,13 @@
     }
 
     &__title {
-        
+
         backface-visibility: hidden;
         font-size: 3.75rem;
         letter-spacing: 2rem;
         font-weight: 700;
         animation: moveInLeft 1s ease-out;
-       
+
 
     }
 
@@ -35,10 +34,11 @@
         letter-spacing: 0.6rem;
         font-weight: 400;
         animation: moveInRight 1s ease-out;
+        color: $light-blue;
     }
 
     &__text-box {
-        
+
         position: absolute;
         top: 40%;
         left: 50%;
@@ -46,48 +46,43 @@
     }
 
     &__button {
-        margin: 3rem 0;
-        border:none;
-        background: $light-white;
-        color: $black;
+        // border:0.5px solid $light-white;
+        background: $white;
+        color: $tomato;
         position: absolute;
         top: 60%;
         left: 50%;
         transform: translate(-50%, -50%);
-        padding: 25px 60px;
+        width: 21.5rem;
+        height: 4.6rem;
         font-weight: 700;
         text-transform: uppercase;
-        border-radius: 100px;
-        letter-spacing: 0.5px;
-        -webkit-box-shadow: 0px 50px 70px rgba(0, 0, 0, 0.3), 0px 10px 10px rgba(0, 0, 0, 0.1);
-        -moz-box-shadow:0px 50px 70px rgba(0, 0, 0, 0.3),0px 10px 10px rgba(0, 0, 0, 0.1);
-        box-shadow: 0px 50px 70px rgba(0, 0, 0, 0.3),
-        0px 10px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 50px;
+        letter-spacing: 2px;
+        padding: .0rem 1rem;
+        margin-top: 5rem;
+        border-bottom: 3px solid $tomato;
         cursor: pointer;
         transition: all 0.3s ease 0s
     }
 
     &__button-link {
         display: inline-block;
-        
+
     }
 
     &__button:hover {
-        color:$black;
+        color: $tomato;
         letter-spacing: 1px;
-        font-weight: 700;
-        background: $light-white;
-        -webkit-box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.2);
-        -moz-box-shadow:0px 2px 8px 0px rgba(0, 0, 0, 0.2);
-        box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.2);
         transition: all 0.3s ease 0s;
 
     }
 
 }
 
-.button__description{
-    color:$tomato;
+.button__description {
+    color: $dark-blue;
+    padding-left: 5px;
 }
 
 @keyframes moveInLeft {
