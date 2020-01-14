@@ -25,6 +25,7 @@
         letter-spacing: 2rem;
         font-weight: 700;
         animation: moveInLeft 1s ease-out;
+       
 
 
     }
@@ -36,6 +37,7 @@
         font-weight: 400;
         animation: moveInRight 1s ease-out;
         color: $light-blue;
+        text-align: center;
     }
 
     &__text-box {
@@ -127,93 +129,98 @@
 
 }
 
-@media (max-width:500px) {
+// @media (max-width:500px) {
 
-    .header__title {
-        font-size: 1rem;
-        letter-spacing: 1rem;
-    }
+//     .header__title {
+//         font-size: 1rem;
+//         letter-spacing: 1rem;
+//     }
 
-    .header__description {
-        font-size: 0.5rem;
-        letter-spacing: .5rem;
-        text-align: center;
-    }
+//     .header__description {
+//         font-size: 0.5rem;
+//         letter-spacing: .5rem;
+//         text-align: center;
+//     }
 
-    .header__button {
-        width: 9.5rem;
-        height: 2.9rem;
-        font-size: 0.75rem;
-    }
+//     .header__button {
+//         width: 15.5rem;
+//         height: 2.9rem;
+//         font-size: 0.75rem;
+//     }
 
-    .button__description {
-        font-size: 0.65rem;
-    }
-
-
-}
-
-@media (max-width: 500px) and (orientation: landscape) {
-
-    .button__description {
-        font-size: 0.55rem;
-    }
-
-    .header__logo {
-        height: 50px;
-    }
+//     .button__description {
+//         font-size: 0.65rem;
+//     }
 
 
+// }
 
-    .header__title {
-        font-size: 1rem;
-        letter-spacing: 1rem;
-    }
+// @media (max-width: 500px) and (orientation: landscape) {
 
-    .header__description {
-        font-size: 0.5rem;
-        letter-spacing: .5rem;
-        text-align: center;
-    }
+//     .button__description {
+//         font-size: 0.55rem;
+//     }
 
-    .header__button {
-        width: 9.5rem;
-        height: 2.9rem;
-        font-size: 0.75rem;
-        top: 50%;
-        margin-top: 3rem;
-    }
+//     .header__logo {
+//         height: 50px;
+       
+//     }
 
-    .button__description {
-        font-size: 0.65rem;
-    }
 
-}
+
+//     .header__title {
+//         font-size: 1rem;
+//         letter-spacing: 1rem;
+//     }
+
+//     .header__description {
+//         font-size: 0.5rem;
+//         letter-spacing: .5rem;
+//         text-align: center;
+//     }
+
+//     .header__button {
+//         width: 15rem;
+//         height: 2.9rem;
+//         font-size: 0.75rem;
+//         top: 50%;
+//     }
+
+//     .button__description {
+//         font-size: 0.65rem;
+//     }
+
+// }
 
 
 @media (max-width:700px) {
 
     .header__title {
-        font-size: 1.25rem;
+        font-size: 1.1rem;
+        letter-spacing: 1rem;
+        text-align: center;
         
     }
 
     .header__description {
-        font-size: 0.75rem;
+        font-size: 0.5rem;
+        letter-spacing: .5rem;
         text-align: center;
     }
 
     .header__button {
-        width: 11.5rem;
-        height: 3.9rem;
-        font-size: 1rem;
+        width: 13.5rem;
+        height: 3.3rem;
+        font-size: 0.6rem;
+       margin: 2rem auto;
     }
 
     .button__description {
-        font-size: 0.75rem;
+        font-size: 0.65rem;
     }
 
     .header__logo {
         height: 80px;
+        top:0;
     }
 }
