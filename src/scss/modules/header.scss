@@ -12,13 +12,14 @@
 
     &__logo {
         position: absolute;
-        top: 40px;
-        left: 40px;
+        top: 5%;
+        left: 2%;
         height: 100px;
     }
 
     &__title {
 
+        margin: 0 5px 0 5px;
         backface-visibility: hidden;
         font-size: 3.75rem;
         letter-spacing: 2rem;
@@ -46,7 +47,7 @@
     }
 
     &__button {
-       border:none;
+        border: none;
         background: $white;
         color: $tomato;
         position: absolute;
@@ -78,7 +79,9 @@
 
     }
 
+
 }
+
 
 .button__description {
     color: $dark-blue;
@@ -121,4 +124,96 @@
     }
 
 
+
+}
+
+@media (max-width:500px) {
+
+    .header__title {
+        font-size: 1rem;
+        letter-spacing: 1rem;
+    }
+
+    .header__description {
+        font-size: 0.5rem;
+        letter-spacing: .5rem;
+        text-align: center;
+    }
+
+    .header__button {
+        width: 9.5rem;
+        height: 2.9rem;
+        font-size: 0.75rem;
+    }
+
+    .button__description {
+        font-size: 0.65rem;
+    }
+
+
+}
+
+@media (max-width: 500px) and (orientation: landscape) {
+
+    .button__description {
+        font-size: 0.55rem;
+    }
+
+    .header__logo {
+        height: 50px;
+    }
+
+
+
+    .header__title {
+        font-size: 1rem;
+        letter-spacing: 1rem;
+    }
+
+    .header__description {
+        font-size: 0.5rem;
+        letter-spacing: .5rem;
+        text-align: center;
+    }
+
+    .header__button {
+        width: 9.5rem;
+        height: 2.9rem;
+        font-size: 0.75rem;
+        top: 50%;
+        margin-top: 3rem;
+    }
+
+    .button__description {
+        font-size: 0.65rem;
+    }
+
+}
+
+
+@media (max-width:700px) {
+
+    .header__title {
+        font-size: 1.25rem;
+        
+    }
+
+    .header__description {
+        font-size: 0.75rem;
+        text-align: center;
+    }
+
+    .header__button {
+        width: 11.5rem;
+        height: 3.9rem;
+        font-size: 1rem;
+    }
+
+    .button__description {
+        font-size: 0.75rem;
+    }
+
+    .header__logo {
+        height: 80px;
+    }
 }

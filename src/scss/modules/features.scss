@@ -1,24 +1,27 @@
 .feature {
     display: grid;
-    justify-content: center;
+    grid-template-rows: 1fr;
+    grid-row: 1/-1;
     align-items: center;
-    padding: 12.8rem 0rem;
-    background-image:url("../assets/img/nature.jpg");
-    
+    padding: 12rem 0rem 3rem 0rem;
+    background-image: url("../assets/img/nature.jpg");
     background-size: cover;
     background-position: center;
-    transform: skewY(-7deg);
-    margin-top: -7.5rem;
+    margin-top: -5.5rem;
+    height: 95vh;
+    clip-path: polygon(0 15vh, 100% 0, 100% 100%, 0 100%);
 
-    &>* {
-        transform: skewY(7deg);
+    &__row {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-gap: 5px;
+        justify-items: center;
     }
-
-    // clip-path: polygon(0 15vh, 100% 0, 100% 100%, 0 100%);
 
     &__box {
         width: 15rem;
-        margin: 0rem 1rem;
+        height: 20rem;
+        margin: 0rem;
         background-color: rgba($light-white, 1);
         color: $big-stone;
         font-size: 1rem;
@@ -26,7 +29,7 @@
         border-radius: 3px;
         box-shadow: 0px 50px 70px rgba(0, 0, 0, 0.3),
             0px 10px 10px rgba(0, 0, 0, 0.1);
-        padding: 1.5rem;
+        padding: 1.1rem;
         border-bottom: 5px solid $tomato;
         transition: transform .3s;
 
@@ -36,9 +39,39 @@
         transform: translateY(-1.5rem) scale(1.03);
     }
 
+
 }
 
 .fas {
     font-size: 2rem;
     color: $tomato;
+}
+
+@media (max-width:700px) {
+
+    .feature {
+        padding: 8rem 0rem 3rem 0rem;
+
+        &__row {
+            grid-gap: 1rem;
+        }
+
+        &__box {
+            width: 10rem;
+            height: 15rem;
+            padding: 0.5rem;
+            font-size: 0.75rem;
+
+            &__box:hover {
+                transform: 0;
+            }
+        }
+
+        .fas {
+            font-size: 1.5rem;
+
+        }
+
+
+    }
 }
