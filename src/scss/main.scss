@@ -4,6 +4,7 @@
 @import "modules/header.scss";
 @import "modules/about.scss";
 @import "modules/features.scss";
+@import "modules/tours.scss";
 
 @import url('https://fonts.googleapis.com/css?family=Lato:400,700,700i&display=swap&subset=latin-ext');
 
@@ -29,5 +30,5 @@ body {
 }
 
 .main{
-    height: 100%;
+    height: 100vh;
 }
