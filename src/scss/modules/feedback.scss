@@ -1,0 +1,94 @@
+.feedback{
+    color: $light-white;
+    position: relative;
+    background-image: url("../assets/img/nat-n6 1.jpg");
+    background-size: cover;
+    background-position: bottom;
+    text-transform: uppercase;
+    transform: skewY(-7deg);
+    padding: 5rem 0;
+    margin-top: -10rem;
+
+    &> *{
+       transform: skewY(7deg);
+    }
+   
+    
+    &__header {
+        margin: 0 auto;
+        padding-bottom: 3rem;
+    }
+
+    &__heading {
+       
+        text-align: center;
+        margin: 0 5px 0 5px;
+        font-size: 2.75rem;
+        letter-spacing: .3rem;
+        font-weight: 700;
+        margin-top: 6rem;
+        text-transform: none;
+
+    }
+
+    &__wrapper{
+
+    }
+
+    &__story{
+        width: 75%;
+        margin: 5rem auto;
+        box-shadow: 0 3rem 6rem rgba($big-stone, .1);
+        background-color: $light-white;
+        color: $big-stone;
+        border-radius: 3px;
+        padding: 5rem;
+        padding-left: 4rem;
+        border-bottom: 5px solid #2f9482;
+    }
+
+}
+
+.figure{
+    &__header {
+        margin: 1rem auto;
+        padding-bottom: 1rem;
+        text-align: center;
+        letter-spacing: 0.2px;
+
+
+        
+    }
+
+    &__heading {
+        font-size: 1rem;
+        text-transform: none;
+        text-align: left;
+        letter-spacing: 0.3px;
+    }
+
+    
+
+    &__shape{
+        width: 10rem;
+        height: 10rem;
+        
+        float: left;
+        shape-outside: circle(50% at 50% 50%);
+        clip-path: circle(50% at 50% 50%);
+        transform: translateX(-1rem);
+    }
+
+    &__span{
+        color: #2f9482;
+        font-weight: 700;
+        
+    }
+
+    &__img{
+       height: 100%;
+       width: 100%;
+    }
+        
+
+}

@@ -3,13 +3,42 @@
     grid-template-rows: 1fr;
     grid-row: 1/-1;
     align-items: center;
-    padding: 12rem 0rem 3rem 0rem;
+    // padding: 12rem 0rem 3rem 0rem;
+
     background-image: url("../assets/img/nature.jpg");
     background-size: cover;
     background-position: center;
-    margin-top: -5.5rem;
-    height: 95vh;
-    clip-path: polygon(0 25vh, 100% 0, 100% 75vh, 0 100%);
+    // margin-top: -5.5rem;
+    // height: 95vh;
+    // clip-path: polygon(0 25vh, 100% 0, 100% 75vh, 0 100%);
+
+    transform: skewY(-7deg);
+    padding: 20rem 0;
+    margin-top: -10rem;
+
+    &> *{
+       transform: skewY(7deg);
+    }
+
+     
+    &__header {
+        margin: 0 auto;
+        padding-bottom: 3rem;
+    }
+
+    &__heading {
+       
+        text-align: center;
+        margin: 0 5px 0 5px;
+        font-size: 2.75rem;
+        letter-spacing: .3rem;
+        font-weight: 700;
+        margin-top: 6rem;
+        text-transform: none;
+        color: $light-white;
+
+    }
+
 
     &__row {
         display: grid;
@@ -30,7 +59,7 @@
         box-shadow: 0px 50px 70px rgba(0, 0, 0, 0.3),
             0px 10px 10px rgba(0, 0, 0, 0.1);
         padding: 1.1rem;
-        border-bottom: 5px solid $tomato;
+        border-bottom: 5px solid #2f9482;
         transition: transform .3s;
 
     }
@@ -44,7 +73,7 @@
 
 .fas {
     font-size: 2rem;
-    color: $tomato;
+    color: #2f9482;
 }
 
 @media (max-width:700px) {

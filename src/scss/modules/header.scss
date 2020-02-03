@@ -51,7 +51,7 @@
     &__button {
         border: none;
         background: $white;
-        color: $tomato;
+        color: #2f9482;
         position: absolute;
         top: 60%;
         left: 50%;
@@ -64,7 +64,7 @@
         letter-spacing: 2px;
         padding: .0rem 1rem;
         margin-top: 5rem;
-        border-bottom: 3px solid $tomato;
+        border-bottom: 3px solid #2f9482;
         cursor: pointer;
         transition: all 0.3s ease 0s
     }
