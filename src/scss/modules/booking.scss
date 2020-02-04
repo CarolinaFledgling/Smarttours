@@ -1,0 +1,187 @@
+.booking {
+    position: relative;
+
+    margin-top: -25vh;
+    background-image: url("../assets/img/nature.jpg");
+    background-size: 100%;
+    background-position: center;
+    padding: 15rem 0;
+    height: 100vh;
+    
+    clip-path: polygon(0 25vh, 100% 0, 100% 100%, 0 100%);
+}
+
+.book{
+
+    &__box {
+        
+        background-image: linear-gradient(105deg, rgba($light-white, 1) 0%,
+                rgba($light-white, 1) 50%,
+                transparent 50%),
+            url(../assets/img/nat-6.jpg);
+        background-size: 100%;
+        border-radius: 3px;
+        box-shadow: 0 1.5rem 4rem rgba($dark, .2);
+        background-repeat: no-repeat;
+        background-position: center;
+        border-bottom: 3px solid #2f9482;
+        width: 60%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin: 10rem auto 0 auto;
+        
+        
+        
+        
+        
+
+    }
+
+    &__details {
+        width: 50%;
+        padding-left: 3rem;
+        
+    }
+
+   
+}
+
+
+.form {
+
+
+
+    &__header {
+        margin: 0 auto;
+        padding-bottom: 3rem;
+
+    }
+
+    &__heading {
+        color: rgba($big-stone, .8);
+        text-align: center;
+        font-size: 1.75rem;
+        letter-spacing: 2px;
+        font-weight: 700;
+        margin-top: 1rem;
+        text-transform: none;
+    }
+
+
+    &__group:not(:last-child) {
+        margin-bottom: 2rem;
+    }
+
+    &__group-button {
+        display: inline-block;
+        color:$light-white;
+        font-size: 1rem;
+        font-weight: 700;
+        text-decoration: none; 
+        padding: 1.1rem 3.5rem;
+        background-color: #2f9482;
+        border-radius: 10rem;
+        border: none;
+        cursor: pointer;
+        margin-bottom: 2rem;
+    }
+
+    &__input {
+        font-size: 1.5rem;
+        padding: 1.5rem 2rem;
+        border-radius: 2px;
+        background-color: rgba($light-white, .5);
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+        border: none;
+        border-bottom: 2px solid transparent;
+        box-shadow: 0 1rem 2rem rgba($big-stone, .1);
+        width: 80%;
+        display: block;
+    }
+
+    &__input:focus {
+        outline: none;
+        box-shadow: 0 1rem 2rem rgba($dark, .1);
+        border-bottom: 2px solid #2f9482;
+    }
+
+    // &__input:focus:invalid{
+    //     border-bottom: 2px solid $tomato;
+    // }
+
+    &__input::placeholder {
+        color: #2f9482;
+    }
+
+    &__label {
+        font-family: 'Lato', sans-serif;
+        font-size: 1.1rem;
+        color: rgba($big-stone, .8);
+        margin-left: 2rem;
+        margin-top: .7rem;
+        display: block;
+        transition: all .3s;
+    }
+
+    &__input:placeholder-shown+&__label {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-4rem);
+    }
+
+
+    &__radio-group {
+        width: 80%;
+        display: inline-block;
+        color: rgba($big-stone, .8);
+        
+    }
+
+    &__radio-label {
+        font-size: 1.5rem;
+        cursor: pointer;
+        position: relative;
+        padding-left: 2rem;
+    }
+
+    &__radio-input{
+        display: none;
+    }
+
+    &__radio-button {
+        height: 1.4rem;
+        width: 1.4rem;
+        display: inline-block;
+        border: 3px solid #2f9482;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translate(0, -50%);
+
+
+
+        &::after {
+            content: "";
+            display: block;
+            height: 0.7rem;
+            width: 0.7rem;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #2f9482;
+            opacity: 0;
+            transform: opacity;
+        }
+    }
+
+    &__radio-input:checked~&__radio-label &__radio-button::after {
+        opacity: 1;
+    }
+
+}

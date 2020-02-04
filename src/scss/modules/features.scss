@@ -3,8 +3,6 @@
     grid-template-rows: 1fr;
     grid-row: 1/-1;
     align-items: center;
-    // padding: 12rem 0rem 3rem 0rem;
-
     background-image: url("../assets/img/nature.jpg");
     background-size: cover;
     background-position: center;
@@ -31,7 +29,7 @@
         text-align: center;
         margin: 0 5px 0 5px;
         font-size: 2.75rem;
-        letter-spacing: .3rem;
+        letter-spacing: 2px;
         font-weight: 700;
         margin-top: 1rem;
         text-transform: none;
