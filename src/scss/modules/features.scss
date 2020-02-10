@@ -73,31 +73,3 @@
     color: #2f9482;
 }
 
-@media (max-width:700px) {
-
-    .feature {
-        padding: 8rem 0rem 3rem 0rem;
-        height: auto;
-
-        &__row {
-            grid-gap: 1rem;
-        }
-
-        &__box {
-
-            padding: 2rem;
-            font-size: 0.75rem;
-
-            &__box:hover {
-                transform: 0;
-            }
-        }
-
-        .fas {
-            font-size: 1.5rem;
-
-        }
-
-
-    }
-}

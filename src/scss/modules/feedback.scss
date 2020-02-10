@@ -1,3 +1,5 @@
+@import "modules/mixins.scss"; 
+
 .feedback {
    color: $light-white;
     position: relative;
@@ -39,16 +41,19 @@
     }
 
     &__story {
-        width: 55%;
+        width: 80%;
         margin: 5rem auto;
         box-shadow: 0 3rem 6rem rgba($big-stone, .1);
         background-color: $light-white;
         color: $big-stone;
-        
         border-radius: 3px;
-        padding: 5rem;
-        padding-left: 4rem;
+        padding: 1rem 1.5rem 1rem 4rem;
+        // padding-left: 4rem;
         border-bottom: 5px solid #2f9482;
+        @include respond (phone) {
+            padding: 1.5rem;
+        
+        }
     }
 
     &__link {
@@ -100,6 +105,9 @@
         text-transform: none;
         text-align: left;
         letter-spacing: 0.3px;
+        @include respond (phone) {
+           text-align: center;
+        }
     }
 
 
@@ -112,7 +120,14 @@
         shape-outside: circle(50% at 50% 50%);
         clip-path: circle(50% at 50% 50%);
         transform: translateX(-1rem);
+
+        @include respond (phone) {
+            float:none;
+            margin: 0 auto;
+        
+        }
     }
+    
 
     &__span {
         color: #2f9482;
