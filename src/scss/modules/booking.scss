@@ -1,55 +1,59 @@
 .booking {
-    position: relative;
 
-    margin-top: -25vh;
-    background-image: url("../assets/img/nature.jpg");
-    background-size: 100%;
-    background-position: center;
-    padding: 15rem 0;
-    height: 100vh;
-    
-    clip-path: polygon(0 25vh, 100% 0, 100% 100%, 0 100%);
-}
+    padding: 15rem;
+    color: $light-white;
+    background-image: url("../assets/img/nat-n6 1.jpg");
+    background-size: cover;
+    background-position: bottom;
+    text-transform: uppercase;
+    transform: skewY(-7deg);
+    margin-top: -7rem;
 
-.book{
+    &>* {
+        transform: skewY(7deg);
+
+    }
+
+
+
+
+
 
     &__box {
-        
+
         background-image: linear-gradient(105deg, rgba($light-white, 1) 0%,
                 rgba($light-white, 1) 50%,
                 transparent 50%),
             url(../assets/img/nat-6.jpg);
-        background-size: 100%;
+        // background-size: 100%;
         border-radius: 3px;
         box-shadow: 0 1.5rem 4rem rgba($dark, .2);
         background-repeat: no-repeat;
         background-position: center;
-        border-bottom: 3px solid #2f9482;
-        width: 60%;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        margin: 10rem auto 0 auto;
-        
-        
-        
-        
-        
+        border-bottom: 3px solid $green;
+        height: 100%;
+        margin: 0 1rem;
+
 
     }
 
     &__details {
-        width: 50%;
-        padding-left: 3rem;
+        width: 60%;
+        padding: 2rem;
         
+
     }
 
-   
+
 }
 
 
+
+
+
 .form {
+
+    padding-left: 3rem;
 
 
 
@@ -60,7 +64,7 @@
     }
 
     &__heading {
-        color: rgba($big-stone, .8);
+        color: rgba($big-stone, .9);
         text-align: center;
         font-size: 1.75rem;
         letter-spacing: 2px;
@@ -76,12 +80,12 @@
 
     &__group-button {
         display: inline-block;
-        color:$light-white;
+        color: $light-white;
         font-size: 1rem;
         font-weight: 700;
-        text-decoration: none; 
+        text-decoration: none;
         padding: 1.1rem 3.5rem;
-        background-color: #2f9482;
+        background-color: $green;
         border-radius: 10rem;
         border: none;
         cursor: pointer;
@@ -105,7 +109,7 @@
     &__input:focus {
         outline: none;
         box-shadow: 0 1rem 2rem rgba($dark, .1);
-        border-bottom: 2px solid #2f9482;
+        border-bottom: 2px solid $green;
     }
 
     // &__input:focus:invalid{
@@ -113,12 +117,12 @@
     // }
 
     &__input::placeholder {
-        color: #2f9482;
+        color: $green;
     }
 
     &__label {
         font-family: 'Lato', sans-serif;
-        font-size: 1.1rem;
+        font-size: 1rem;
         color: rgba($big-stone, .8);
         margin-left: 2rem;
         margin-top: .7rem;
@@ -137,17 +141,17 @@
         width: 80%;
         display: inline-block;
         color: rgba($big-stone, .8);
-        
+
     }
 
     &__radio-label {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         cursor: pointer;
         position: relative;
         padding-left: 2rem;
     }
 
-    &__radio-input{
+    &__radio-input {
         display: none;
     }
 
@@ -155,7 +159,7 @@
         height: 1.4rem;
         width: 1.4rem;
         display: inline-block;
-        border: 3px solid #2f9482;
+        border: 3px solid $green;
         border-radius: 50%;
         position: absolute;
         top: 50%;
@@ -174,7 +178,7 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            background-color: #2f9482;
+            background-color: $green;
             opacity: 0;
             transform: opacity;
         }
@@ -184,4 +188,24 @@
         opacity: 1;
     }
 
+}
+
+@media (max-width:1280px) {
+    .booking {
+        padding: 10rem 0;
+    }
+
+    .booking__box {
+        background-image: linear-gradient(to right, rgba($light-white, .9) 0%,
+                rgba($light-white, .9) 100%),
+            url(../assets/img/nat-6.jpg);
+        background-size: cover;
+        margin: 0 5rem;
+    }
+
+    .booking__details{
+        width: 95%;
+        
+        
+    }
 }

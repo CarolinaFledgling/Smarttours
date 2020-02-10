@@ -6,6 +6,7 @@
     background-size: cover;
     background-position: bottom;
     text-transform: uppercase;
+  
 
     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 
@@ -13,31 +14,38 @@
     &__logo {
         position: absolute;
         top: 5%;
-        left: 2%;
-        height: 100px;
+        left: 5%;
+        height: 6.25rem;
+
     }
 
     &__title {
 
         margin: 0 5px 0 5px;
         backface-visibility: hidden;
-        font-size: 3.75rem;
-        letter-spacing: 2rem;
+        font-size: 3rem;
+        letter-spacing: 1rem;
         font-weight: 700;
         animation: moveInLeft 1s ease-out;
-
-
+        position: absolute;
+        top: -30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
 
     }
 
     &__description {
         backface-visibility: hidden;
-        font-size: 1.25rem;
+        font-size: 1.2rem;
         letter-spacing: 0.6rem;
         font-weight: 400;
         animation: moveInRight 1s ease-out;
         color: $light-blue;
         text-align: center;
+        
+        @include respond (phone) {
+            font-size: 2rem; why ? ?? czemu nie dziala 
+        }
     }
 
     &__text-box {
@@ -88,6 +96,8 @@
 .button__description {
     color: $dark-blue;
     padding-left: 5px;
+
+    
 }
 
 @keyframes moveInLeft {
@@ -131,35 +141,17 @@
 
 
 
-
-@media (max-width:700px) {
-
-    .header__title {
-        font-size: 1.1rem;
-        letter-spacing: 1rem;
-        text-align: center;
-
+@mixin respond($breakpoint) {
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
     }
-
-    .header__description {
-        font-size: 0.5rem;
-        letter-spacing: .5rem;
-        text-align: center;
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25) { @content };     //900px
     }
-
-    .header__button {
-        width: 13.5rem;
-        height: 3.3rem;
-        font-size: 0.6rem;
-        margin: 2rem auto;
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
     }
-
-    .button__description {
-        font-size: 0.65rem;
-    }
-
-    .header__logo {
-        height: 80px;
-        top: 0;
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
     }
 }
