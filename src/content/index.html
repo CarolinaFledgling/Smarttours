@@ -36,12 +36,11 @@
     <div class="navigation__background">&nbsp;</div>
     <nav class="navigation__nav">
       <ul class="navigation__list">
-        <li class="navigation__item"><a href="#" class="navigation__link">About Us</a></li>
-        <li class="navigation__item"><a href="#" class="navigation__link">Tours</a></li>
-        <li class="navigation__item"><a href="#" class="navigation__link">Feedback</a></li>
-        <li class="navigation__item"><a href="#" class="navigation__link">Book here</a></li>
-        <li class="navigation__item"><a href="#" class="navigation__link">Contact</a></li>
-
+        <li class="navigation__item"><a href="#link_about" class="navigation__link">About Us</a></li>
+        <li class="navigation__item"><a href="#link_tours" class="navigation__link">Tours</a></li>
+        <li class="navigation__item"><a href="#link_feedback" class="navigation__link">Feedback</a></li>
+        <li class="navigation__item"><a href="#link_book" class="navigation__link">Book here</a></li>
+        <li class="navigation__item"><a href="#link_contact" class="navigation__link">Contact</a></li>
       </ul>
     </nav>
 
@@ -65,7 +64,7 @@
     </section>
     <section class="feature">
       <header class="feature__header">
-        <h2 class="feature__heading">We are Travel Agency with passionate about traveling </h2>
+        <h2 id="link_about" class="feature__heading">We are Travel Agency with passionate about traveling </h2>
       </header>
       <div class="feature__row">
         <div class="feature__box">
@@ -106,10 +105,9 @@
 
 
     <section class="tours">
-      <header class="tours__header">
-        <h2 class="tours__heading">Take a look at our most popular tours</h2>
+      <header class="tours__header">        
+        <h2 id="link_tours" class="tours__heading">Take a look at our most popular tours</h2>
       </header>
-
       <section class="wrapper__components">
         <div class="cards">
           <div class="cards__mainCard">
@@ -219,7 +217,7 @@
     <section class="about">
     </section>
     <section class="feedback">
-      <header class="feedback__header">
+      <header id="link_feedback" class="feedback__header">
         <h2 class="feedback__heading">Feedback from travelers who participated in our tours</h2>
       </header>
       <div class="feedback__wrapper">
@@ -275,7 +273,7 @@
       <div class="booking__box">
         <div class="booking__details">
           <form action="#" class="form">
-            <header class="form__header">
+            <header id="link_book" class="form__header">
               <h2 class="form__heading">Book tour here</h2>
             </header>
             <div class="form__group">
@@ -323,7 +321,8 @@
     <div class="footer__contact">
       <div class="contact">
         <div class="contact__features">
-          <h3 class="contact__heading">CONTACT</h3>
+          
+          <h3 id="link_contact" class="contact__heading">CONTACT</h3>
 
           <ul class="contact__list">
             <li class="contact__item"><i class="fa fa-map-marker fa-2x"><span class="contact__text"> Warszawa | Chopina
@@ -360,6 +359,6 @@
 
   <script src="js/main.js"></script>
 
-</body>
+</body >
 
 </html>

@@ -2,12 +2,12 @@
 
     color: $big-stone;
     background-color: $white;
-    display: grid;
+    // display: grid;
     grid-template-columns: auto 1fr;
     padding: 3rem 0;
     // border-bottom: 3px solid #2f9482;
-    justify-items: center;
-    align-content: center;
+    // justify-items: center;
+    // align-content: center;
     transform: skewY(-7deg);
    
     &>* {
@@ -25,9 +25,10 @@
 
 
     &__heading {
-        margin: 3rem 0 1rem 0;
+        margin: 3rem auto;
+        margin-left: 1.5rem;
         font-size: 2rem;
-        color: rgba($big-stone, .8);
+        color:$big-stone;
         letter-spacing: 2px;
         text-align: center;
 
@@ -64,7 +65,9 @@
 
 
 .socials__list {
-    display: flex;
+    display: block;
+    text-align: center;
+    // display: flex;
     list-style: none;
     padding: 0;
     position: relative;
