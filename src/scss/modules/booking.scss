@@ -118,7 +118,8 @@
         border-bottom: 2px solid transparent;
         box-shadow: 0 1rem 2rem rgba($big-stone, .1);
         width: 80%;
-        display: block;
+        // display: block;
+        
 
         @include respond (phone) {
             width: 75%;

@@ -41,13 +41,13 @@
     }
 
     &__story {
-        width: 80%;
+        width: 60%;
         margin: 5rem auto;
         box-shadow: 0 3rem 6rem rgba($big-stone, .1);
         background-color: $light-white;
         color: $big-stone;
         border-radius: 3px;
-        padding: 1rem 1.5rem 1rem 4rem;
+        padding: 1rem 1.5rem 2rem 4rem;
         // padding-left: 4rem;
         border-bottom: 5px solid #2f9482;
         @include respond (phone) {
