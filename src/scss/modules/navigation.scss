@@ -1,3 +1,5 @@
+@import "modules/mixins.scss";
+
 .navigation {
 
     &__checkbox {
@@ -17,6 +19,16 @@
         text-align: center;
         cursor: pointer;
 
+        @include respond (phone) {
+
+            height: 4rem;
+            width: 4rem;
+            position: fixed;
+            top: 3rem;
+            right: 3rem;
+
+        }
+
 
     }
 
@@ -34,14 +46,22 @@
 
 
 
-        // transform: scale(80);
+        @include respond (phone) {
+
+            height: 3rem;
+            width: 3rem;
+            position: fixed;
+            top: 3.5rem;
+            right: 3.5rem;
+
+        }
 
 
     }
 
     &__nav {
         height: 100vh;
-        // width: 100%;
+        
         position: fixed;
         top: 0;
         right: 0;
@@ -53,28 +73,33 @@
     }
 
     &__list {
+       
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         list-style: none;
         text-align: center;
+        padding: 0; 
 
 
     }
 
     &__item {
         margin: 1rem;
+        
     }
 
     &__link {
-        padding: 1rem 2rem;
+        display:block;
+        margin: 2rem auto;
         font-size: 2rem;
         font-weight: 400;
         color: $light-white;
         text-decoration: none;
         text-transform: uppercase;
         transition: 1s all;
+        width: 100%;
 
         &:hover {
             border-bottom: 1px solid $green;
@@ -96,6 +121,11 @@
 
         position: relative;
 
+        @include respond (phone) {
+
+            margin-top: 1.9rem;
+        }
+
         &,
         &::before,
         &::after {
@@ -103,6 +133,11 @@
             height: 2px;
             background-color: $big-stone;
             display: inline-block;
+
+            @include respond (phone) {
+                height: 1.5px;
+                width: 2rem;
+            }
 
         }
 
@@ -116,33 +151,55 @@
         }
 
         &::before {
-            top: -0.8rem
+            top: -0.8rem;
+
+            @include respond (phone) {
+                top: -0.5rem;
+            }
+
+
         }
 
         &::after {
-            top: 0.8rem
+            top: 0.8rem;
+
+            @include respond (phone) {
+                top: 0.5rem;
+            }
+
+
         }
 
     }
 
     &__button:hover &__icon::before {
         top: -1rem;
+
+        @include respond (phone) {
+            top: -0.5rem;
+        }
     }
 
     &__button:hover &__icon::after {
         top: 1rem;
+
+        @include respond (phone) {
+            top: 0.5rem;
+        }
+
     }
 
-    &__checkbox:checked + &__button &__icon {
+    &__checkbox:checked+&__button &__icon {
         background-color: transparent;
     }
 
-    &__checkbox:checked + &__button &__icon::before {
-       top:0;
-       transform: rotate(45deg);
+    &__checkbox:checked+&__button &__icon::before {
+        top: 0;
+        transform: rotate(45deg);
     }
-    &__checkbox:checked + &__button &__icon::after {
-        top:0;
+
+    &__checkbox:checked+&__button &__icon::after {
+        top: 0;
         transform: rotate(-45deg);
     }
 
