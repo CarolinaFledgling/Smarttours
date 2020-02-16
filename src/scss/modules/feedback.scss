@@ -50,6 +50,7 @@
         border-bottom: 5px solid #2f9482;
         @include respond (phone) {
             padding: 1.5rem;
+            width: 85%;
         
         }
     }

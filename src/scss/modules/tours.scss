@@ -193,12 +193,12 @@
         background-color: $light-white;
         color: $big-stone;
         display: inline-block;
-        transition: all 0.3s ease 0s
+        transition: all 0.3s ease 0s;
     }
 
     &__button:hover {
         letter-spacing: 1px;
-        transition: all 0.3s ease 0s;
+       
     }
 
 
