@@ -1,15 +1,19 @@
-.popup{
+.popup {
     height: 100vh;
     width: 100%;
     position: fixed;
-    top:0;
-    left:0;
+    top: 0;
+    left: 0;
     background-color: rgba($black, .8);
     z-index: 9999;
 
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s;
 
-    &__content{
-        display:flex;
+
+    &__content {
+        display: flex;
         align-items: center;
         justify-content: center;
         // height: 30rem;
@@ -18,39 +22,48 @@
         background-color: $light-white;
         box-shadow: 0 2rem 4rem rgba($big-stone, .2);
         border-radius: 3px;
-        padding:2rem ;
+        padding: 2rem;
+        margin: 0 auto;
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0);
+        transition: all .4s .1s;
 
         @include respond (phone) {
             flex-direction: column;
-            
+
         }
 
     }
 
 
-    &__left{
-        
+    &__left {
+
         // width: 33.3333%;
         flex-grow: 1;
         margin-right: 2rem;
-        
+
 
     }
 
-    &__right{
+    &__right {
         // width: 66.6667%;
         flex-grow: 2;
 
     }
 
-    &__img{
+    &__img {
         display: block;
         width: 20rem;
         box-shadow: 0 1rem 2rem rgba($big-stone, .1);
 
     }
 
-    &__text{
+    &__text {
+        column-count: 2;
+        column-gap: 3rem;
+        column-rule: 1px solid #e9e9e9;
+        hyphens: auto;
+
 
     }
 
@@ -69,7 +82,38 @@
 
     &__button:hover {
         letter-spacing: 1px;
-        
+
+    }
+
+
+    &:target {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    &:target &__content {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+    &__close {
+
+        &:link,
+        &:visited {
+            color: $big-stone;
+            position: absolute;
+            top: 1rem;
+            right: 3.5rem;
+            font-size: 3rem;
+            text-decoration: none;
+            display: inline-block;
+            transition: all .2s;
+            line-height: 1;
+        }
+
+        &:hover {
+            color: $green;
+        }
     }
 
 }
