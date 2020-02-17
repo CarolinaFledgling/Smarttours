@@ -35,6 +35,14 @@
 
     }
 
+    &__header{
+        margin: 3rem auto;
+    }
+
+    &__heading{
+        margin: 1rem 0;
+    }
+
 
     &__left {
 
@@ -54,7 +62,21 @@
     &__img {
         display: block;
         width: 20rem;
+        height: 15rem;
         box-shadow: 0 1rem 2rem rgba($big-stone, .1);
+
+        &:not(:last-child){
+            margin-bottom: 1rem;
+        }
+
+
+        
+       
+
+        @include respond (phone) {
+            display: none;
+
+        }
 
     }
 
@@ -63,6 +85,12 @@
         column-gap: 3rem;
         column-rule: 1px solid #e9e9e9;
         hyphens: auto;
+
+        @include respond (phone) {
+            column-rule:none;
+            column-count: 1;
+
+        }
 
 
     }
@@ -102,13 +130,13 @@
         &:visited {
             color: $big-stone;
             position: absolute;
-            top: 1rem;
+            top: 0;
             right: 3.5rem;
             font-size: 3rem;
             text-decoration: none;
             display: inline-block;
             transition: all .2s;
-            line-height: 1;
+            
         }
 
         &:hover {
