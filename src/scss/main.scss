@@ -70,15 +70,16 @@ body {
 #topBtn{
     position: fixed;
     bottom: 40px;
-    right:40px;
+    right:1.3rem;
     font-size: 2rem;
-    width: 5rem;
-    height:5rem;
+    width: 4rem;
+    height:4rem;
     background-color: $light-white;
     border: none;
     border-radius: 50%;
     cursor: pointer;
     display: none;
+    box-shadow: 0 1rem 3rem rgba($big-stone, .1);
     
    
 }
