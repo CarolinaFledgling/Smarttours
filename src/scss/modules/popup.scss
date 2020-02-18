@@ -36,7 +36,10 @@
     }
 
     &__header{
-        margin: 3rem auto;
+        text-align: center;
+        font-size: 2rem;
+        margin: 2rem auto;
+        padding-bottom: 3rem;
     }
 
     &__heading{
@@ -81,14 +84,17 @@
     }
 
     &__text {
+        
         column-count: 2;
         column-gap: 3rem;
         column-rule: 1px solid #e9e9e9;
         hyphens: auto;
+        color: rgba($big-stone, .9);
 
         @include respond (phone) {
             column-rule:none;
             column-count: 1;
+            text-align: center;
 
         }
 

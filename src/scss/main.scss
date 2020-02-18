@@ -66,3 +66,24 @@ body {
 
 
 }
+
+#topBtn{
+    position: fixed;
+    bottom: 40px;
+    right:40px;
+    font-size: 2rem;
+    width: 5rem;
+    height:5rem;
+    background-color: $light-white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    
+   
+}
+
+.fas{
+    color: $green;
+    
+}
