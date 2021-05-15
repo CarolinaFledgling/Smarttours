@@ -1,6 +1,6 @@
-@import "_normalize";
-@import "_variables";
-@import "_mixins.scss";
+@import "../scss/normalize";
+@import "../scss/mixins";
+@import "../scss/variables";
 @import "modules/header.scss";
 @import "modules/about.scss";
 @import "modules/features.scss";
@@ -9,6 +9,7 @@
 @import "modules/booking.scss";
 @import "modules/footer.scss";
 @import "modules/navigation.scss";
+@import "modules/popup.scss";
 @import "modules/popup.scss";
 
 
