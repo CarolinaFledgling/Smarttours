@@ -28,7 +28,7 @@ I decided to create a new repo and write code for this website one more time , f
 
 
 
-### To publish page using github pages use `npm run deploy`
+
 
 
 
