@@ -5,14 +5,19 @@
  
 
 I've just started to learn `Html CSS JavaScript`. 
-After finishing my first course about HTML CSS and a little bit of JavaScript.
+After finishing my first course about Front End Web Development.
 I decided to check myself and create a simple website with no starter code. 
 
 
-That was one of my first websites. I am planning to create this website more modern and without bugs in the future . 
+That was one of my first projects. 
+
+I did this project 17 months ago. Now  I see I made a lot of mistakes there. 
+I decided to create a new repo and write code for this website one more time , focusing on Accessibility, Responsive, Semantic HTML, Google Lighthouse
+
+## Below is a link to the current repository for this project
 
 
-[Smarttours](https://carolinafledgling.github.io/Smarttours/)
+[Smarttours - new - version ](https://github.com/CarolinaFledgling/smarttours-New-Version)
 
 
 
